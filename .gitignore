@@ -1,0 +1,20 @@
+.env
+
+# VS Code settings
+.vscode/
+
+# Pytest cache
+.pytest_cache/
+
+__pycache__/
+*.pyc
+
+logs/*.log
+
+data/archive/*
+data/rejected/*
+data/processed/*
+
+notebook_processed_data/*
+
+checks.py

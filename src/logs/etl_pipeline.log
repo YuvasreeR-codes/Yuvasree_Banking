@@ -1,0 +1,191 @@
+2026-10-11 13:22:12,470 | INFO | bank_loan_etl | No rejected records for run R1
+2026-10-11 13:22:12,510 | INFO | bank_loan_etl | Exported 1 rejected records to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_export_rejected_rows0\rejected\rejected_R1.csv
+2026-10-11 13:22:12,553 | INFO | bank_loan_etl | Curated snapshots exported to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_export_curated_tables0\processed\R1
+2026-10-11 13:22:12,577 | INFO | bank_loan_etl | Archived source file: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_archive_moves_file0\archive\customers_R1.csv
+2026-10-11 13:22:12,585 | INFO | bank_loan_etl | ETL execution lock acquired
+2026-10-11 13:22:12,598 | INFO | bank_loan_etl | ETL execution lock released
+2026-10-11 13:22:12,663 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,664 | INFO | bank_loan_etl | Starting Banking Loan Risk ETL
+2026-10-11 13:22:12,664 | INFO | bank_loan_etl | Run ID: ETL_TEST_001
+2026-10-11 13:22:12,664 | INFO | bank_loan_etl | Source: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_success0\incoming\customers.csv
+2026-10-11 13:22:12,664 | INFO | bank_loan_etl | Batch size: 7
+2026-10-11 13:22:12,664 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,665 | INFO | bank_loan_etl | STEP 1: Extracting source data
+2026-10-11 13:22:12,666 | INFO | bank_loan_etl | Extracted 3 source records
+2026-10-11 13:22:12,666 | INFO | bank_loan_etl | STEP 2: Validating source data
+2026-10-11 13:22:12,666 | INFO | bank_loan_etl | Validation completed: valid=2, rejected=1, issues=1
+2026-10-11 13:22:12,666 | INFO | bank_loan_etl | STEP 3: Transforming valid data
+2026-10-11 13:22:12,666 | INFO | bank_loan_etl | Transformation completed
+2026-10-11 13:22:12,666 | INFO | bank_loan_etl | STEP 4: Classifying incremental records
+2026-10-11 13:22:12,666 | INFO | bank_loan_etl | Incremental classification: {'new_count': 1, 'duplicate_count': 1, 'correction_count': 0}
+2026-10-11 13:22:12,667 | INFO | bank_loan_etl | STEP 5: Creating ETL run record
+2026-10-11 13:22:12,667 | INFO | bank_loan_etl | STEP 6: Recording data-quality issues
+2026-10-11 13:22:12,670 | INFO | bank_loan_etl | Exported 1 rejected records to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_success0\rejected\rejected_ETL_TEST_001.csv
+2026-10-11 13:22:12,671 | INFO | bank_loan_etl | STEP 7: Exporting curated snapshots
+2026-10-11 13:22:12,687 | INFO | bank_loan_etl | Curated snapshots exported to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_success0\processed\ETL_TEST_001
+2026-10-11 13:22:12,687 | INFO | bank_loan_etl | STEP 8: Loading MySQL batches
+2026-10-11 13:22:12,687 | INFO | bank_loan_etl | Batch load completed: {'inserted_count': 1, 'updated_count': 0, 'skipped_count': 1, 'failed_count': 0}
+2026-10-11 13:22:12,687 | INFO | bank_loan_etl | STEP 9: Running reconciliation
+2026-10-11 13:22:12,687 | INFO | bank_loan_etl | Reconciliation result: SUCCESS
+2026-10-11 13:22:12,688 | INFO | bank_loan_etl | STEP 10: Archiving source file
+2026-10-11 13:22:12,690 | INFO | bank_loan_etl | Archived source file: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_success0\archive\customers_ETL_TEST_001.csv
+2026-10-11 13:22:12,690 | INFO | bank_loan_etl | Pipeline completed: SUCCESS
+2026-10-11 13:22:12,711 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,712 | INFO | bank_loan_etl | Starting Banking Loan Risk ETL
+2026-10-11 13:22:12,712 | INFO | bank_loan_etl | Run ID: ETL_TEST_001
+2026-10-11 13:22:12,712 | INFO | bank_loan_etl | Source: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_failed_reconcili0\incoming\customers.csv
+2026-10-11 13:22:12,712 | INFO | bank_loan_etl | Batch size: 500
+2026-10-11 13:22:12,712 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,713 | INFO | bank_loan_etl | STEP 1: Extracting source data
+2026-10-11 13:22:12,713 | INFO | bank_loan_etl | Extracted 3 source records
+2026-10-11 13:22:12,713 | INFO | bank_loan_etl | STEP 2: Validating source data
+2026-10-11 13:22:12,713 | INFO | bank_loan_etl | Validation completed: valid=2, rejected=1, issues=1
+2026-10-11 13:22:12,713 | INFO | bank_loan_etl | STEP 3: Transforming valid data
+2026-10-11 13:22:12,713 | INFO | bank_loan_etl | Transformation completed
+2026-10-11 13:22:12,713 | INFO | bank_loan_etl | STEP 4: Classifying incremental records
+2026-10-11 13:22:12,713 | INFO | bank_loan_etl | Incremental classification: {'new_count': 1, 'duplicate_count': 1, 'correction_count': 0}
+2026-10-11 13:22:12,714 | INFO | bank_loan_etl | STEP 5: Creating ETL run record
+2026-10-11 13:22:12,714 | INFO | bank_loan_etl | STEP 6: Recording data-quality issues
+2026-10-11 13:22:12,718 | INFO | bank_loan_etl | Exported 1 rejected records to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_failed_reconcili0\rejected\rejected_ETL_TEST_001.csv
+2026-10-11 13:22:12,718 | INFO | bank_loan_etl | STEP 7: Exporting curated snapshots
+2026-10-11 13:22:12,737 | INFO | bank_loan_etl | Curated snapshots exported to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_failed_reconcili0\processed\ETL_TEST_001
+2026-10-11 13:22:12,738 | INFO | bank_loan_etl | STEP 8: Loading MySQL batches
+2026-10-11 13:22:12,739 | INFO | bank_loan_etl | Batch load completed: {'inserted_count': 1, 'updated_count': 0, 'skipped_count': 1, 'failed_count': 0}
+2026-10-11 13:22:12,740 | INFO | bank_loan_etl | STEP 9: Running reconciliation
+2026-10-11 13:22:12,740 | INFO | bank_loan_etl | Reconciliation result: FAILED
+2026-10-11 13:22:12,740 | ERROR | bank_loan_etl | Reconciliation failed. Source file retained for investigation.
+2026-10-11 13:22:12,741 | INFO | bank_loan_etl | Pipeline completed: FAILED
+2026-10-11 13:22:12,766 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,766 | INFO | bank_loan_etl | Starting Banking Loan Risk ETL
+2026-10-11 13:22:12,766 | INFO | bank_loan_etl | Run ID: ETL_TEST_001
+2026-10-11 13:22:12,768 | INFO | bank_loan_etl | Source: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_failure_after_ru0\incoming\customers.csv
+2026-10-11 13:22:12,768 | INFO | bank_loan_etl | Batch size: 500
+2026-10-11 13:22:12,768 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,768 | INFO | bank_loan_etl | STEP 1: Extracting source data
+2026-10-11 13:22:12,768 | INFO | bank_loan_etl | Extracted 3 source records
+2026-10-11 13:22:12,768 | INFO | bank_loan_etl | STEP 2: Validating source data
+2026-10-11 13:22:12,768 | INFO | bank_loan_etl | Validation completed: valid=2, rejected=1, issues=1
+2026-10-11 13:22:12,768 | INFO | bank_loan_etl | STEP 3: Transforming valid data
+2026-10-11 13:22:12,769 | INFO | bank_loan_etl | Transformation completed
+2026-10-11 13:22:12,769 | INFO | bank_loan_etl | STEP 4: Classifying incremental records
+2026-10-11 13:22:12,769 | INFO | bank_loan_etl | Incremental classification: {'new_count': 1, 'duplicate_count': 1, 'correction_count': 0}
+2026-10-11 13:22:12,769 | INFO | bank_loan_etl | STEP 5: Creating ETL run record
+2026-10-11 13:22:12,770 | INFO | bank_loan_etl | STEP 6: Recording data-quality issues
+2026-10-11 13:22:12,779 | INFO | bank_loan_etl | Exported 1 rejected records to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_failure_after_ru0\rejected\rejected_ETL_TEST_001.csv
+2026-10-11 13:22:12,779 | INFO | bank_loan_etl | STEP 7: Exporting curated snapshots
+2026-10-11 13:22:12,802 | INFO | bank_loan_etl | Curated snapshots exported to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_failure_after_ru0\processed\ETL_TEST_001
+2026-10-11 13:22:12,802 | INFO | bank_loan_etl | STEP 8: Loading MySQL batches
+2026-10-11 13:22:12,802 | ERROR | bank_loan_etl | ETL pipeline failed: simulated load failure
+Traceback (most recent call last):
+  File "D:\Bank_test\Bank_loan_project\src\etl\pipeline.py", line 510, in run_etl_pipeline
+    load_counts = load_incremental_batch(
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Bank_test\Bank_loan_project\tests\test_pipeline.py", line 190, in fail
+    raise RuntimeError('simulated load failure')
+RuntimeError: simulated load failure
+2026-10-11 13:22:12,827 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,828 | INFO | bank_loan_etl | Starting Banking Loan Risk ETL
+2026-10-11 13:22:12,828 | INFO | bank_loan_etl | Run ID: ETL_TEST_001
+2026-10-11 13:22:12,828 | INFO | bank_loan_etl | Source: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_failure_before_r0\incoming\customers.csv
+2026-10-11 13:22:12,828 | INFO | bank_loan_etl | Batch size: 500
+2026-10-11 13:22:12,829 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,829 | INFO | bank_loan_etl | STEP 1: Extracting source data
+2026-10-11 13:22:12,829 | ERROR | bank_loan_etl | ETL pipeline failed: extraction failed
+Traceback (most recent call last):
+  File "D:\Bank_test\Bank_loan_project\src\etl\pipeline.py", line 374, in run_etl_pipeline
+    source_df = extract_data(
+                ^^^^^^^^^^^^^
+  File "D:\Bank_test\Bank_loan_project\tests\test_pipeline.py", line 201, in fail
+    raise RuntimeError('extraction failed')
+RuntimeError: extraction failed
+2026-10-11 13:22:12,851 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,851 | INFO | bank_loan_etl | Starting Banking Loan Risk ETL
+2026-10-11 13:22:12,851 | INFO | bank_loan_etl | Run ID: ETL_TEST_001
+2026-10-11 13:22:12,851 | INFO | bank_loan_etl | Source: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_lock_failure_pre0\incoming\customers.csv
+2026-10-11 13:22:12,851 | INFO | bank_loan_etl | Batch size: 500
+2026-10-11 13:22:12,852 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,870 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,870 | INFO | bank_loan_etl | Starting Banking Loan Risk ETL
+2026-10-11 13:22:12,871 | INFO | bank_loan_etl | Run ID: ETL_TEST_001
+2026-10-11 13:22:12,871 | INFO | bank_loan_etl | Source: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_release_lock_err0\incoming\customers.csv
+2026-10-11 13:22:12,871 | INFO | bank_loan_etl | Batch size: 500
+2026-10-11 13:22:12,871 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,871 | INFO | bank_loan_etl | STEP 1: Extracting source data
+2026-10-11 13:22:12,872 | INFO | bank_loan_etl | Extracted 3 source records
+2026-10-11 13:22:12,872 | INFO | bank_loan_etl | STEP 2: Validating source data
+2026-10-11 13:22:12,872 | INFO | bank_loan_etl | Validation completed: valid=2, rejected=1, issues=1
+2026-10-11 13:22:12,872 | INFO | bank_loan_etl | STEP 3: Transforming valid data
+2026-10-11 13:22:12,872 | INFO | bank_loan_etl | Transformation completed
+2026-10-11 13:22:12,872 | INFO | bank_loan_etl | STEP 4: Classifying incremental records
+2026-10-11 13:22:12,873 | INFO | bank_loan_etl | Incremental classification: {'new_count': 1, 'duplicate_count': 1, 'correction_count': 0}
+2026-10-11 13:22:12,873 | INFO | bank_loan_etl | STEP 5: Creating ETL run record
+2026-10-11 13:22:12,873 | INFO | bank_loan_etl | STEP 6: Recording data-quality issues
+2026-10-11 13:22:12,878 | INFO | bank_loan_etl | Exported 1 rejected records to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_release_lock_err0\rejected\rejected_ETL_TEST_001.csv
+2026-10-11 13:22:12,878 | INFO | bank_loan_etl | STEP 7: Exporting curated snapshots
+2026-10-11 13:22:12,895 | INFO | bank_loan_etl | Curated snapshots exported to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_release_lock_err0\processed\ETL_TEST_001
+2026-10-11 13:22:12,895 | INFO | bank_loan_etl | STEP 8: Loading MySQL batches
+2026-10-11 13:22:12,896 | INFO | bank_loan_etl | Batch load completed: {'inserted_count': 1, 'updated_count': 0, 'skipped_count': 1, 'failed_count': 0}
+2026-10-11 13:22:12,896 | INFO | bank_loan_etl | STEP 9: Running reconciliation
+2026-10-11 13:22:12,896 | INFO | bank_loan_etl | Reconciliation result: SUCCESS
+2026-10-11 13:22:12,896 | INFO | bank_loan_etl | STEP 10: Archiving source file
+2026-10-11 13:22:12,898 | INFO | bank_loan_etl | Archived source file: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_release_lock_err0\archive\customers_ETL_TEST_001.csv
+2026-10-11 13:22:12,899 | INFO | bank_loan_etl | Pipeline completed: SUCCESS
+2026-10-11 13:22:12,899 | ERROR | bank_loan_etl | Unable to release ETL lock
+Traceback (most recent call last):
+  File "D:\Bank_test\Bank_loan_project\src\etl\pipeline.py", line 613, in run_etl_pipeline
+    release_etl_lock(
+  File "D:\Bank_test\Bank_loan_project\tests\test_pipeline.py", line 221, in fail
+    raise RuntimeError('unlock error')
+RuntimeError: unlock error
+2026-10-11 13:22:12,918 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,919 | INFO | bank_loan_etl | Starting Banking Loan Risk ETL
+2026-10-11 13:22:12,919 | INFO | bank_loan_etl | Run ID: ETL_TEST_001
+2026-10-11 13:22:12,919 | INFO | bank_loan_etl | Source: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_forwards_batch_s0\incoming\customers.csv
+2026-10-11 13:22:12,919 | INFO | bank_loan_etl | Batch size: 23
+2026-10-11 13:22:12,919 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,920 | INFO | bank_loan_etl | STEP 1: Extracting source data
+2026-10-11 13:22:12,920 | INFO | bank_loan_etl | Extracted 3 source records
+2026-10-11 13:22:12,920 | INFO | bank_loan_etl | STEP 2: Validating source data
+2026-10-11 13:22:12,920 | INFO | bank_loan_etl | Validation completed: valid=2, rejected=1, issues=1
+2026-10-11 13:22:12,920 | INFO | bank_loan_etl | STEP 3: Transforming valid data
+2026-10-11 13:22:12,920 | INFO | bank_loan_etl | Transformation completed
+2026-10-11 13:22:12,921 | INFO | bank_loan_etl | STEP 4: Classifying incremental records
+2026-10-11 13:22:12,921 | INFO | bank_loan_etl | Incremental classification: {'new_count': 1, 'duplicate_count': 1, 'correction_count': 0}
+2026-10-11 13:22:12,921 | INFO | bank_loan_etl | STEP 5: Creating ETL run record
+2026-10-11 13:22:12,921 | INFO | bank_loan_etl | STEP 6: Recording data-quality issues
+2026-10-11 13:22:12,928 | INFO | bank_loan_etl | Exported 1 rejected records to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_forwards_batch_s0\rejected\rejected_ETL_TEST_001.csv
+2026-10-11 13:22:12,928 | INFO | bank_loan_etl | STEP 7: Exporting curated snapshots
+2026-10-11 13:22:12,953 | INFO | bank_loan_etl | Curated snapshots exported to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_forwards_batch_s0\processed\ETL_TEST_001
+2026-10-11 13:22:12,954 | INFO | bank_loan_etl | STEP 8: Loading MySQL batches
+2026-10-11 13:22:12,954 | INFO | bank_loan_etl | Batch load completed: {'inserted_count': 1, 'updated_count': 0, 'skipped_count': 1, 'failed_count': 0}
+2026-10-11 13:22:12,954 | INFO | bank_loan_etl | STEP 9: Running reconciliation
+2026-10-11 13:22:12,954 | INFO | bank_loan_etl | Reconciliation result: SUCCESS
+2026-10-11 13:22:12,954 | INFO | bank_loan_etl | STEP 10: Archiving source file
+2026-10-11 13:22:12,959 | INFO | bank_loan_etl | Archived source file: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_forwards_batch_s0\archive\customers_ETL_TEST_001.csv
+2026-10-11 13:22:12,960 | INFO | bank_loan_etl | Pipeline completed: SUCCESS
+2026-10-11 13:22:12,989 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,989 | INFO | bank_loan_etl | Starting Banking Loan Risk ETL
+2026-10-11 13:22:12,990 | INFO | bank_loan_etl | Run ID: ETL_TEST_001
+2026-10-11 13:22:12,990 | INFO | bank_loan_etl | Source: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_source_name_save0\incoming\customers.csv
+2026-10-11 13:22:12,990 | INFO | bank_loan_etl | Batch size: 500
+2026-10-11 13:22:12,990 | INFO | bank_loan_etl | =================================================================
+2026-10-11 13:22:12,990 | INFO | bank_loan_etl | STEP 1: Extracting source data
+2026-10-11 13:22:12,991 | INFO | bank_loan_etl | Extracted 3 source records
+2026-10-11 13:22:12,991 | INFO | bank_loan_etl | STEP 2: Validating source data
+2026-10-11 13:22:12,991 | INFO | bank_loan_etl | Validation completed: valid=2, rejected=1, issues=1
+2026-10-11 13:22:12,991 | INFO | bank_loan_etl | STEP 3: Transforming valid data
+2026-10-11 13:22:12,991 | INFO | bank_loan_etl | Transformation completed
+2026-10-11 13:22:12,991 | INFO | bank_loan_etl | STEP 4: Classifying incremental records
+2026-10-11 13:22:12,991 | INFO | bank_loan_etl | Incremental classification: {'new_count': 1, 'duplicate_count': 1, 'correction_count': 0}
+2026-10-11 13:22:12,991 | INFO | bank_loan_etl | STEP 5: Creating ETL run record
+2026-10-11 13:22:12,992 | INFO | bank_loan_etl | STEP 6: Recording data-quality issues
+2026-10-11 13:22:12,998 | INFO | bank_loan_etl | Exported 1 rejected records to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_source_name_save0\rejected\rejected_ETL_TEST_001.csv
+2026-10-11 13:22:12,998 | INFO | bank_loan_etl | STEP 7: Exporting curated snapshots
+2026-10-11 13:22:13,020 | INFO | bank_loan_etl | Curated snapshots exported to C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_source_name_save0\processed\ETL_TEST_001
+2026-10-11 13:22:13,020 | INFO | bank_loan_etl | STEP 8: Loading MySQL batches
+2026-10-11 13:22:13,021 | INFO | bank_loan_etl | Batch load completed: {'inserted_count': 1, 'updated_count': 0, 'skipped_count': 1, 'failed_count': 0}
+2026-10-11 13:22:13,021 | INFO | bank_loan_etl | STEP 9: Running reconciliation
+2026-10-11 13:22:13,021 | INFO | bank_loan_etl | Reconciliation result: SUCCESS
+2026-10-11 13:22:13,021 | INFO | bank_loan_etl | STEP 10: Archiving source file
+2026-10-11 13:22:13,024 | INFO | bank_loan_etl | Archived source file: C:\Users\yuvasree.r\AppData\Local\Temp\pytest-of-yuvasree.r\pytest-8\test_pipeline_source_name_save0\archive\customers_ETL_TEST_001.csv
+2026-10-11 13:22:13,025 | INFO | bank_loan_etl | Pipeline completed: SUCCESS
